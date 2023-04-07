@@ -12,7 +12,9 @@ public class Exam02 {
 		System.out.println("성적입력 : ");
 		int num = sc.nextInt();
 		
-		if(num >=90)
+		if(num>100)
+			System.out.println("점수가 100점이상입니다, 다시 입력하여주세요");
+		else if(num >=90)
 			System.out.println("A학점");
 		else  if (num >=80)
 			System.out.println("B학점");

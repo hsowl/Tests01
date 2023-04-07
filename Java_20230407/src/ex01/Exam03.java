@@ -13,7 +13,7 @@ public class Exam03 {
 		System.out.println("숫자입력 = ");
 		int num = sc.nextInt();
 		
-		if(num>0)
+		if(num='0')
 			System.out.println("양수");
 		else if (num<0)
 			System.out.println("음수");
