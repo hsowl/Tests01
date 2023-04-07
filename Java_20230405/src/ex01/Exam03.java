@@ -16,15 +16,15 @@ public class Exam03 {
 //		num = num-1;
 //		num -= 1;
 		
-		tmp = --num;
-		sum = num--;
+		tmp = --num;    //1) num = num-1, tmp = num
+		sum = num--;    //1) sum = num, num = num-1
 		
 //		sum = ++num;
 		
 //		tmp = ++num;
 //		tmp = num++;
 		
-		System.out.println("tmp : " + sum);
+		System.out.println("tmp : " + tmp);
 		System.out.println("num : " + num);
 		System.out.println("sum : " + sum);
 		

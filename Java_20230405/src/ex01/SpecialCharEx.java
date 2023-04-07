@@ -8,7 +8,7 @@ public class SpecialCharEx {
 		System.out.println('\n'); // 개행문자 출력하고 개행
 		System.out.println("\"Hello\""); //큰따옴표를 출력하고 싶으면 이렇게한다.
 		System.out.println("c;\\"); //파일 경로표시
-		System.out.println("\uac63");
+		System.out.println("\uac63"); // 표준코드
 	}
 
 }

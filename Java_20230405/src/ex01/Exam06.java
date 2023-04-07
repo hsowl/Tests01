@@ -9,12 +9,14 @@ public class Exam06 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.err.println("정수입력 >>");
+		System.out.println("정수입력 >>");
 		int num = sc.nextInt();
 		
 		int result = (num>0) ? num : -num; //
 		
 		System.out.println(result);
+		
+		
 	}
 
 }

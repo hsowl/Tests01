@@ -22,7 +22,7 @@ public class Exam04 {
 		
 //		String input = Sc.nextLine();   ----->내가 적은거
 //		System.out.println(input);      ----->내가 적은거
-		int num = sc.nextInt();   /*------> 선생님이 한거 Integer.parseInt랑 같은거임~*/
+		int num = sc.nextInt();   /*------> 선생님이 한거 Integer.parseInt랑 비슷한거임~*/
 		
 		
 //		int num = Integer.parseInt(input);    --------->내가 적은거
