@@ -22,7 +22,7 @@ public class Q_7 {
 		average = (a+b+c)/3;
 		
 		System.out.println("당신의 총점은 : "+total+ "입니다.");
-		System.out.println("당신의 평균은 : "+average+ "입니다.");
+		System.out.printf("당신의 평균은 : %.2f%n",average, "입니다.");
 		
 		if(average>100)
 			System.out.println("점수를 다시 확인하여주세요.");
