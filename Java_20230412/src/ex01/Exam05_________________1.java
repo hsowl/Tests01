@@ -20,7 +20,7 @@ public class Exam05_________________1 {
 			
 			for (int i = 0; i< num.length; i++)
 				if (num [i] > max )
-					 num [i] = max	;
+					  max = num [i];
 			
 //			for (int i = 0; i< num.length; i++)
 //				if (num [i] < min )
