@@ -21,13 +21,13 @@ class Member {
 		age = 20;
 	}
 	
-	void setData(String n, int a) {
-		name = n;
-		if(a>=0 && a<= 120)
-			age = a;
-		else
-			age = 1;
-	}
+//	void setData(String n, int a) {
+//		name = n;
+//		if(a>=0 && a<= 120)
+//			age = a;
+//		else
+//			age = 1;
+//	}
 	
 	void display ( ) {
 		System.out.println(name+ ", " + age );
