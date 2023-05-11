@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ex08.Myfunction"/>
-    <fullyQualifiedTypeName name="ex08.Myfunction2"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.lang.Void"/>
@@ -20,10 +17,7 @@
     <fullyQualifiedTypeName name="ex01.Person"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ex01.ToyPriceInfo"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ex01.ReportCard"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -49,7 +43,6 @@
     <fullyQualifiedTypeName name="ex02.Shape.Rectangle"/>
     <fullyQualifiedTypeName name="ex02.Shape"/>
     <fullyQualifiedTypeName name="ex02.Rectangle"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="ex03.Printable"/>
     <fullyQualifiedTypeName name="ex03.Mydocument"/>
     <fullyQualifiedTypeName name="ex04.Button"/>
@@ -59,5 +52,12 @@
     <fullyQualifiedTypeName name="ex05.Student"/>
     <fullyQualifiedTypeName name="ex05.Student.Function"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="com.Ezen.Exam.YoungBuildTest"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

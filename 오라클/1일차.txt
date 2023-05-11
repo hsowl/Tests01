@@ -1,0 +1,127 @@
+--전체 테이블 조회
+select *
+from all_tables;
+
+--테이블 전체 조회
+select *
+from DEPARTMENTS;
+
+--특정 컬럼만 조회
+select department_id, department_name
+from DEPARTMENTS;
+
+--별칭(애칭) 사용하기
+select department_id as 부서번호, department_name as 부서명
+from DEPARTMENTS;
+
+--중복 제거
+select distinct location_id
+from  DEPARTMENTS;
+
+--연결 연산자 ( || )
+select first_name || last_name as full_name
+from EMPLOYEES;
+
+--" 큰따옴표 안됨 ----> ' 작은 따옴표
+select 'First_' || last_name as 성명
+from EMPLOYEES;
+
+--산술연산
+select salary , salary*1.1 as 인상
+from EMPLOYEES;
+
+select country_id as 국가, country_name as 국가명
+from COUNTRIES;
+
+select distinct region_id
+from COUNTRIES;
+
+select country_name || country_id
+from COUNTRIES;
+
+select job_title, min_salary*1.1, max_salary*1.1
+from JOBS;
+
+--where 조건에서 비교연산자
+select *
+from EMPLOYEES
+where EMPLOYEE_ID = 110;
+
+select *
+from EMPLOYEES
+where EMPLOYEE_ID <> 110;
+
+select *
+from EMPLOYEES
+where not EMPLOYEE_ID = 110;
+
+select *
+from EMPLOYEES
+where EMPLOYEE_ID >= 110;
+
+select *
+from EMPLOYEES
+where EMPLOYEE_ID >= 110 and EMPLOYEE_ID <120;
+
+select *
+from EMPLOYEES
+where not (EMPLOYEE_ID >= 110 and EMPLOYEE_ID <120);
+
+select *
+from EMPLOYEES
+where first_name = 'John' or LAST_NAME = 'Popp';
+
+select *
+from EMPLOYEES
+where not (first_name = 'John' or LAST_NAME = 'Popp');
+
+select *
+from EMPLOYEES
+where FIRST_NAME = 'David';   
+
+select *
+from JOBS
+where MIN_SALARY = 4000;
+
+select *
+from JOBS
+where MIN_SALARY > 8000;
+
+select *
+from JOBS
+where MAX_SALARY <= 10000;
+
+select *
+from JOBS
+where MIN_SALARY >= 4000 and MAX_SALARY <=10000;
+
+select *
+from EMPLOYEES
+where JOB_ID = 'IT_PROG' and SALARY > 5000;
+
+
+--first name 이름으로 오름차순 정렬
+select first_name, last_name
+from EMPLOYEES
+order by first_name; -- asc : 오름차순 정렬 / 생략가능
+
+--first name 이름으로 내림차순 정렬
+select first_name, last_name
+from EMPLOYEES
+order by first_name desc;
+
+--COUNTRY_ID 1차 오름차순 정렬, 2차 CITY 내림차순 정렬
+select country_id, city
+from LOCATIONS
+order by COUNTRY_ID, city desc;
+
+--job id가 'ST_CLERK' 인 레코트 중 first_name으로 오름차순 정렬
+--순서를 기억하세요
+--select
+--from
+--where
+--order by
+select *
+from EMPLOYEES
+where JOB_ID = 'ST_CLERK'
+order by first_name;
