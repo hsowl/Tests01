@@ -10,8 +10,9 @@ import java.util.Set;
 class Solution {
 	public int[] solution(String[] genres, int[] plays) {
 		int answer = 0;
-		int[] k = new int[10];
-		return k;
+		
+		
+		return plays;
 	}
 
 	public void solution(String string, int i) {
@@ -24,25 +25,41 @@ public class MusicChart {
 
 	public static void main(String[] args) {
 		
-		String[] genres = new String[100];
-		int[] plays = new int[100];
+		String[] genres = {"pop","classic","classic","classic","pop"};
+		int[] plays = {400, 100, 300, 1100, 500};
 		
-		Map<String, Integer> map = new HashMap<>();
-		genres[0] = "pop";
-		genres[1] = "classic";
-		genres[2] = "classic";
-		genres[3] = "classic";
-		genres[4] = "pop";
+		Map<String, List<Integer>> map = new HashMap<>();
+//		Map<String, Integer> map = new HashMap<>();
+		List<Integer> classicList = new ArrayList<>();
+		List<Integer> popList = new ArrayList<>();
 		
-		plays[0] = 400;
-		plays[1] = 100;
-		plays[2] = 300;
-		plays[3] = 1100;
-		plays[4] = 500;
-		
-		for(int i = 0; i<5; i++) {
-			map.put(genres[i], plays[i]);
+		for(int i = 0; i<genres.length; i++) {
+			map.put(genres[i], null);
 		}
+		
+		classicList.add(plays[1]);
+		classicList.add(plays[2]);
+		classicList.add(plays[3]);
+		popList.add(plays[0]);
+		popList.add(plays[4]);
+		
+		
+		for(int i = 0; i<genres.length; i++) {
+			if(map.containsKey(genres[i])) {
+				map.put(genres[i], classicList);
+			}else if(map.containsKey(genres[i])) {
+				map.put(genres[i], popList);
+			}
+		}
+		
+//		for(int i = 1; i<genres.length; i++) {
+//			if(map.containsKey(genres[i])) {
+//				
+//			}
+//			map.put(genres[i], list.get(i));
+//		
+//		}
+		System.out.println(map);
 		
 		
 		
@@ -63,7 +80,9 @@ public class MusicChart {
 //		listMap.put(genres[1], list);
 //		System.out.println(listMap.get(genres[0]));
 //		System.out.println(listMap.get(genres[1]));
-		
-	}
 
+	}
+	
 }
+
+
