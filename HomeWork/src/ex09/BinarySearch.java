@@ -4,7 +4,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 
-		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int[] array = {5, 2, 3, 4, 12, 6, 7, 8, 9, 10};
 		int target = 5;
 
 		int index = binarySearch(array, target);
@@ -28,7 +28,12 @@ private static int binarySearch(int[] array, int target) {
 		
 		while(left <= right) {
 			mid = (left+right)/2;
-			
+			answer = array[mid];
+			if(target == answer) {
+				return answer;
+			}
+			else
+				right = right-1;
 			
 		}
 
